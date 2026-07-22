@@ -1,0 +1,77 @@
+2026-07-22 12:06:01,278 [INFO] database: Ma'lumotlar bazasi tayyor.
+2026-07-22 12:06:01,582 [INFO] __main__: DEGA Bot ishga tushmoqda...
+2026-07-22 12:06:01,953 [INFO] aiogram.dispatcher: Start polling
+2026-07-22 12:06:02,151 [INFO] aiogram.dispatcher: Run polling for bot @DEGA_uzbot id=8702739807 - 'DEGA🗝'
+2026-07-22 12:06:13,947 [INFO] aiogram.event: Update id=230137123 is not handled. Duration 41 ms by bot id=8702739807
+2026-07-22 12:06:15,604 [INFO] aiogram.event: Update id=230137124 is not handled. Duration 34 ms by bot id=8702739807
+2026-07-22 12:06:15,778 [INFO] aiogram.event: Update id=230137125 is not handled. Duration 33 ms by bot id=8702739807
+2026-07-22 12:06:15,956 [INFO] aiogram.event: Update id=230137126 is not handled. Duration 32 ms by bot id=8702739807
+2026-07-22 12:06:16,151 [INFO] aiogram.event: Update id=230137127 is not handled. Duration 34 ms by bot id=8702739807
+2026-07-22 12:06:16,266 [INFO] aiogram.event: Update id=230137128 is not handled. Duration 42 ms by bot id=8702739807
+2026-07-22 12:06:16,406 [INFO] aiogram.event: Update id=230137129 is not handled. Duration 26 ms by bot id=8702739807
+2026-07-22 12:06:16,584 [INFO] aiogram.event: Update id=230137130 is not handled. Duration 41 ms by bot id=8702739807
+2026-07-22 12:06:16,782 [INFO] aiogram.event: Update id=230137131 is not handled. Duration 31 ms by bot id=8702739807
+2026-07-22 12:06:17,023 [INFO] aiogram.event: Update id=230137132 is not handled. Duration 33 ms by bot id=8702739807
+2026-07-22 12:06:17,156 [INFO] aiogram.event: Update id=230137133 is not handled. Duration 39 ms by bot id=8702739807
+2026-07-22 12:06:17,270 [INFO] aiogram.event: Update id=230137134 is not handled. Duration 27 ms by bot id=8702739807
+2026-07-22 12:06:17,454 [INFO] aiogram.event: Update id=230137135 is not handled. Duration 32 ms by bot id=8702739807
+2026-07-22 12:06:17,614 [INFO] aiogram.event: Update id=230137136 is not handled. Duration 34 ms by bot id=8702739807
+2026-07-22 12:06:17,789 [INFO] aiogram.event: Update id=230137137 is not handled. Duration 34 ms by bot id=8702739807
+2026-07-22 12:06:17,953 [INFO] aiogram.event: Update id=230137138 is not handled. Duration 33 ms by bot id=8702739807
+2026-07-22 12:06:18,128 [INFO] aiogram.event: Update id=230137139 is not handled. Duration 33 ms by bot id=8702739807
+2026-07-22 12:06:18,272 [INFO] aiogram.event: Update id=230137140 is not handled. Duration 28 ms by bot id=8702739807
+2026-07-22 12:06:18,547 [INFO] aiogram.event: Update id=230137141 is not handled. Duration 91 ms by bot id=8702739807
+2026-07-22 12:06:18,720 [INFO] aiogram.event: Update id=230137142 is not handled. Duration 85 ms by bot id=8702739807
+2026-07-22 12:06:18,870 [INFO] aiogram.event: Update id=230137143 is not handled. Duration 32 ms by bot id=8702739807
+2026-07-22 12:06:19,078 [INFO] aiogram.event: Update id=230137144 is not handled. Duration 31 ms by bot id=8702739807
+2026-07-22 12:06:19,281 [INFO] aiogram.event: Update id=230137145 is not handled. Duration 32 ms by bot id=8702739807
+2026-07-22 12:06:19,409 [INFO] aiogram.event: Update id=230137146 is not handled. Duration 31 ms by bot id=8702739807
+2026-07-22 12:06:19,589 [INFO] aiogram.event: Update id=230137147 is not handled. Duration 34 ms by bot id=8702739807
+2026-07-22 12:06:19,803 [INFO] aiogram.event: Update id=230137148 is not handled. Duration 33 ms by bot id=8702739807
+2026-07-22 12:06:20,000 [INFO] aiogram.event: Update id=230137149 is not handled. Duration 32 ms by bot id=8702739807
+2026-07-22 12:06:20,202 [INFO] aiogram.event: Update id=230137150 is not handled. Duration 32 ms by bot id=8702739807
+2026-07-22 12:06:20,398 [INFO] aiogram.event: Update id=230137151 is not handled. Duration 25 ms by bot id=8702739807
+2026-07-22 12:06:20,503 [INFO] aiogram.event: Update id=230137152 is not handled. Duration 23 ms by bot id=8702739807
+2026-07-22 12:06:20,619 [INFO] aiogram.event: Update id=230137153 is not handled. Duration 24 ms by bot id=8702739807
+2026-07-22 12:06:20,729 [INFO] aiogram.event: Update id=230137154 is not handled. Duration 25 ms by bot id=8702739807
+2026-07-22 12:06:20,843 [INFO] aiogram.event: Update id=230137155 is not handled. Duration 29 ms by bot id=8702739807
+2026-07-22 12:06:20,989 [INFO] aiogram.event: Update id=230137156 is not handled. Duration 30 ms by bot id=8702739807
+2026-07-22 12:06:21,181 [INFO] aiogram.event: Update id=230137157 is not handled. Duration 27 ms by bot id=8702739807
+2026-07-22 12:06:21,326 [INFO] aiogram.event: Update id=230137158 is not handled. Duration 24 ms by bot id=8702739807
+2026-07-22 12:06:21,543 [INFO] aiogram.event: Update id=230137159 is not handled. Duration 37 ms by bot id=8702739807
+2026-07-22 12:08:20,608 [INFO] aiogram.event: Update id=230137160 is handled. Duration 475 ms by bot id=8702739807
+2026-07-22 12:08:24,235 [INFO] aiogram.event: Update id=230137161 is handled. Duration 463 ms by bot id=8702739807
+2026-07-22 12:08:27,760 [INFO] aiogram.event: Update id=230137162 is handled. Duration 343 ms by bot id=8702739807
+2026-07-22 12:08:32,671 [INFO] aiogram.event: Update id=230137163 is handled. Duration 133 ms by bot id=8702739807
+2026-07-22 12:08:38,772 [INFO] aiogram.event: Update id=230137164 is handled. Duration 130 ms by bot id=8702739807
+2026-07-22 12:08:51,777 [INFO] aiogram.event: Update id=230137165 is handled. Duration 301 ms by bot id=8702739807
+2026-07-22 12:08:55,635 [INFO] aiogram.event: Update id=230137166 is handled. Duration 557 ms by bot id=8702739807
+2026-07-22 12:08:57,832 [INFO] aiogram.event: Update id=230137167 is handled. Duration 155 ms by bot id=8702739807
+2026-07-22 12:09:01,345 [INFO] aiogram.event: Update id=230137168 is handled. Duration 572 ms by bot id=8702739807
+2026-07-22 12:09:07,609 [INFO] aiogram.event: Update id=230137169 is handled. Duration 235 ms by bot id=8702739807
+2026-07-22 12:09:10,809 [INFO] aiogram.event: Update id=230137170 is handled. Duration 663 ms by bot id=8702739807
+2026-07-22 12:09:30,869 [INFO] aiogram.event: Update id=230137171 is handled. Duration 608 ms by bot id=8702739807
+2026-07-22 12:09:32,515 [INFO] aiogram.event: Update id=230137172 is handled. Duration 138 ms by bot id=8702739807
+2026-07-22 12:09:35,774 [INFO] aiogram.event: Update id=230137173 is handled. Duration 253 ms by bot id=8702739807
+2026-07-22 12:09:37,448 [INFO] aiogram.event: Update id=230137174 is handled. Duration 404 ms by bot id=8702739807
+2026-07-22 12:09:39,974 [INFO] aiogram.event: Update id=230137175 is handled. Duration 211 ms by bot id=8702739807
+2026-07-22 12:09:41,844 [INFO] aiogram.event: Update id=230137176 is handled. Duration 253 ms by bot id=8702739807
+2026-07-22 12:09:43,844 [INFO] aiogram.event: Update id=230137177 is handled. Duration 565 ms by bot id=8702739807
+2026-07-22 12:09:45,021 [INFO] aiogram.event: Update id=230137178 is handled. Duration 665 ms by bot id=8702739807
+2026-07-22 12:09:47,982 [INFO] aiogram.event: Update id=230137179 is handled. Duration 179 ms by bot id=8702739807
+2026-07-22 12:09:50,362 [INFO] aiogram.event: Update id=230137180 is handled. Duration 268 ms by bot id=8702739807
+2026-07-22 12:09:51,911 [INFO] aiogram.event: Update id=230137181 is handled. Duration 380 ms by bot id=8702739807
+2026-07-22 12:09:53,444 [INFO] aiogram.event: Update id=230137182 is handled. Duration 175 ms by bot id=8702739807
+2026-07-22 12:09:55,316 [INFO] aiogram.event: Update id=230137183 is handled. Duration 409 ms by bot id=8702739807
+2026-07-22 12:09:57,555 [INFO] aiogram.event: Update id=230137184 is handled. Duration 260 ms by bot id=8702739807
+2026-07-22 12:09:59,987 [INFO] aiogram.event: Update id=230137185 is handled. Duration 744 ms by bot id=8702739807
+2026-07-22 12:10:02,595 [INFO] aiogram.event: Update id=230137186 is handled. Duration 1442 ms by bot id=8702739807
+2026-07-22 12:10:11,999 [INFO] aiogram.event: Update id=230137187 is handled. Duration 406 ms by bot id=8702739807
+2026-07-22 12:15:16,160 [INFO] aiogram.event: Update id=230137188 is not handled. Duration 27 ms by bot id=8702739807
+2026-07-22 12:15:18,187 [INFO] aiogram.event: Update id=230137189 is handled. Duration 519 ms by bot id=8702739807
+2026-07-22 12:15:32,026 [INFO] aiogram.event: Update id=230137190 is handled. Duration 432 ms by bot id=8702739807
+2026-07-22 12:15:46,829 [INFO] aiogram.event: Update id=230137191 is handled. Duration 183 ms by bot id=8702739807
+2026-07-22 12:16:02,905 [INFO] aiogram.event: Update id=230137192 is handled. Duration 327 ms by bot id=8702739807
+2026-07-22 12:16:12,504 [INFO] aiogram.event: Update id=230137193 is handled. Duration 150 ms by bot id=8702739807
+2026-07-22 12:16:23,718 [INFO] aiogram.event: Update id=230137194 is handled. Duration 176 ms by bot id=8702739807
+2026-07-22 12:16:48,186 [INFO] aiogram.event: Update id=230137195 is handled. Duration 605 ms by bot id=8702739807
