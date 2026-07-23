@@ -23,31 +23,18 @@ def kb_language() -> InlineKeyboardMarkup:
     return builder.as_markup()
 
 
-# ── Onboarding ───────────────────────────────────────────────────────────────
+# ── Kontakt tugmasi (ism + telefon bir vaqtda) ───────────────────────────────
 
 def kb_contact(lang: str) -> ReplyKeyboardMarkup:
+    labels = {
+        "uz": "📱 Kontaktni ulashish",
+        "ru": "📱 Поделиться контактом",
+        "en": "📱 Share Contact",
+    }
     builder = ReplyKeyboardBuilder()
-    labels = {"uz": "📱 Raqamni ulashish", "ru": "📱 Поделиться номером", "en": "📱 Share Contact"}
     builder.button(text=labels.get(lang, labels["uz"]), request_contact=True)
     builder.adjust(1)
     return builder.as_markup(resize_keyboard=True, one_time_keyboard=True)
-
-
-def kb_location(lang: str) -> ReplyKeyboardMarkup:
-    builder = ReplyKeyboardBuilder()
-    loc_labels = {"uz": "📍 Lokatsiyani yuborish", "ru": "📍 Отправить местоположение", "en": "📍 Share Location"}
-    skip_labels = {"uz": "O'tkazib yuborish", "ru": "Пропустить", "en": "Skip"}
-    builder.button(text=loc_labels.get(lang, loc_labels["uz"]), request_location=True)
-    builder.button(text=skip_labels.get(lang, skip_labels["uz"]))
-    builder.adjust(1)
-    return builder.as_markup(resize_keyboard=True, one_time_keyboard=True)
-
-
-SKIP_TEXTS = {
-    "uz": "O'tkazib yuborish",
-    "ru": "Пропустить",
-    "en": "Skip",
-}
 
 
 # ── Asosiy menyu ─────────────────────────────────────────────────────────────
@@ -62,40 +49,14 @@ def kb_main_menu(lang: str) -> ReplyKeyboardMarkup:
     return builder.as_markup(resize_keyboard=True)
 
 
-def main_menu_texts(lang: str) -> set[str]:
-    """Asosiy menyu tugma matnlari to'plami (filter uchun)."""
-    return {
-        t(lang, "btn_services"),
-        t(lang, "btn_operator"),
-        t(lang, "btn_profile"),
-        t(lang, "btn_about"),
-    }
-
-
-# ── Xizmatlar ────────────────────────────────────────────────────────────────
+# ── Xizmatlar (inline) ───────────────────────────────────────────────────────
 
 def kb_services(lang: str) -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
     for key in SERVICE_KEYS:
         svc = SERVICES.get(key, {})
-        name = svc.get(lang, svc.get("uz", {})).get("name", key)
+        name = (svc.get(lang) or svc.get("uz", {})).get("name", key)
         builder.button(text=name, callback_data=f"svc_{key}")
-    builder.adjust(1)
-    return builder.as_markup()
-
-
-def kb_service_detail(lang: str, service_key: str) -> InlineKeyboardMarkup:
-    builder = InlineKeyboardBuilder()
-    builder.button(text=t(lang, "btn_order"),    callback_data=f"order_{service_key}")
-    builder.button(text=t(lang, "btn_back"),     callback_data="back_to_services")
-    builder.adjust(1)
-    return builder.as_markup()
-
-
-def kb_confirm_order(lang: str, service_key: str) -> InlineKeyboardMarkup:
-    builder = InlineKeyboardBuilder()
-    builder.button(text=t(lang, "btn_confirm_yes"), callback_data=f"confirm_{service_key}")
-    builder.button(text=t(lang, "btn_cancel"),      callback_data="cancel_order")
     builder.adjust(1)
     return builder.as_markup()
 
@@ -104,8 +65,8 @@ def kb_confirm_order(lang: str, service_key: str) -> InlineKeyboardMarkup:
 
 def kb_profile(lang: str) -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
-    builder.button(text=t(lang, "btn_change_lang"),  callback_data="change_language")
-    builder.button(text=t(lang, "btn_re_register"),  callback_data="re_register")
+    builder.button(text=t(lang, "btn_change_lang"), callback_data="change_language")
+    builder.button(text=t(lang, "btn_re_register"), callback_data="re_register")
     builder.adjust(1)
     return builder.as_markup()
 

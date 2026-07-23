@@ -10,146 +10,118 @@ ADMIN_IDS: list[int] = [
     for x in os.getenv("ADMIN_IDS", "").split(",")
     if x.strip().isdigit()
 ]
-OPERATOR_PHONE: str = os.getenv("OPERATOR_PHONE", "+998 90 000 00 00")
+OPERATOR_PHONE: str = os.getenv("OPERATOR_PHONE", "+998909351177")
 DB_PATH: str = "dega_bot.db"
 
 # Xizmatlar identifikatorlari (kalit) — til-neytral
-SERVICE_KEYS = ["ready_project", "design_3d", "designer_2d3d"]
+SERVICE_KEYS = [
+    "ready_design",
+    "need_design",
+    "outdoor_ads",
+    "furniture",
+    "metal_const",
+    "turnkey_object",
+    "project_calc",
+]
 
 # Xizmat ma'lumotlari har uch tilda
 SERVICES: dict[str, dict] = {
-    "ready_project": {
+    "ready_design": {
         "uz": {
-            "name": "Menda tayyor loyiha bor",
-            "description": (
-                "<b>Tayyor loyiha asosida ishlab chiqarish</b>\n\n"
-                "Sizda allaqachon tayyor loyiha hujjatlari mavjudmi? "
-                "DEGA jamoasi ularni tahlil qilib, eng qisqa muddatda "
-                "ishlab chiqarishga kiritadi.\n\n"
-                "Xizmatga nima kiradi:\n"
-                "— Loyiha hujjatlarini ko'rib chiqish\n"
-                "— Materiallarni tanlash va hisob-kitob\n"
-                "— Ishlab chiqarish va yetkazib berish\n\n"
-                "Narx: kelishuv asosida"
-            ),
+            "name": "📐 Menda tayyor dizayn bor (2D/3D)?",
+            "description": "<b>📐 Menda tayyor dizayn bor (2D/3D)?</b>",
         },
         "ru": {
-            "name": "У меня есть готовый проект",
-            "description": (
-                "<b>Производство по готовому проекту</b>\n\n"
-                "Если у вас уже есть проектная документация, "
-                "команда DEGA изучит её и запустит производство "
-                "в кратчайшие сроки.\n\n"
-                "Что входит в услугу:\n"
-                "— Анализ проектной документации\n"
-                "— Подбор материалов и расчёт стоимости\n"
-                "— Производство и доставка\n\n"
-                "Стоимость: по договорённости"
-            ),
+            "name": "📐 У меня уже есть готовый дизайн (2D/3D)?",
+            "description": "<b>📐 У меня уже есть готовый дизайн (2D/3D)?</b>",
         },
         "en": {
-            "name": "I have a ready project",
-            "description": (
-                "<b>Production Based on Your Ready Project</b>\n\n"
-                "Already have project documentation? The DEGA team "
-                "will review it and launch production in the shortest "
-                "possible time.\n\n"
-                "Service includes:\n"
-                "— Project documentation review\n"
-                "— Material selection and cost estimation\n"
-                "— Production and delivery\n\n"
-                "Price: negotiable"
-            ),
+            "name": "📐 I already have a ready design (2D/3D)?",
+            "description": "<b>📐 I already have a ready design (2D/3D)?</b>",
         },
     },
-    "design_3d": {
+    "need_design": {
         "uz": {
-            "name": "Menda 3D dizayn bor",
-            "description": (
-                "<b>3D dizayn asosida ishlab chiqarish</b>\n\n"
-                "Tayyor 3D modelingiz bormi? Uni yuborish kifoya — "
-                "DEGA mutaxassislari uni ishlab chiqarish formatiga "
-                "o'tkazib, mahsulotni tayyorlaydi.\n\n"
-                "Xizmatga nima kiradi:\n"
-                "— 3D faylni qabul qilish va tahlil\n"
-                "— Ishlab chiqarish uchun moslash\n"
-                "— Prototip yoki to'liq partiya\n\n"
-                "Narx: kelishuv asosida"
-            ),
+            "name": "🎨 Dizayn ishlab chiqish kerak (2D/3D)?",
+            "description": "<b>🎨 Dizayn ishlab chiqish kerak (2D/3D)?</b>",
         },
         "ru": {
-            "name": "У меня есть 3D дизайн",
-            "description": (
-                "<b>Производство по 3D-дизайну</b>\n\n"
-                "Есть готовая 3D-модель? Просто отправьте её — "
-                "специалисты DEGA адаптируют файл под производство "
-                "и изготовят изделие.\n\n"
-                "Что входит в услугу:\n"
-                "— Приём и анализ 3D-файла\n"
-                "— Адаптация под производство\n"
-                "— Прототип или серийное производство\n\n"
-                "Стоимость: по договорённости"
-            ),
+            "name": "🎨 Нужна разработка дизайна (2D/3D)?",
+            "description": "<b>🎨 Нужна разработка дизайна (2D/3D)?</b>",
         },
         "en": {
-            "name": "I have a 3D design",
-            "description": (
-                "<b>Production Based on Your 3D Design</b>\n\n"
-                "Have a ready 3D model? Just send it — DEGA specialists "
-                "will adapt the file for production and manufacture "
-                "your product.\n\n"
-                "Service includes:\n"
-                "— 3D file reception and analysis\n"
-                "— Adaptation for production\n"
-                "— Prototype or full batch production\n\n"
-                "Price: negotiable"
-            ),
+            "name": "🎨 Need design development (2D/3D)?",
+            "description": "<b>🎨 Need design development (2D/3D)?</b>",
         },
     },
-    "designer_2d3d": {
+    "outdoor_ads": {
         "uz": {
-            "name": "Dizayner xizmati 2D/3D",
-            "description": (
-                "<b>Professional 2D/3D dizayn xizmati</b>\n\n"
-                "Hali loyiha yo'qmi? Muammo emas. DEGA dizaynerlari "
-                "g'oyangizni professional 2D chizma yoki 3D modelga "
-                "aylantiradi.\n\n"
-                "Xizmatga nima kiradi:\n"
-                "— Texnik topshiriqni qabul qilish\n"
-                "— 2D chizma yoki 3D model yaratish\n"
-                "— Muvofiqlash va tuzatish\n"
-                "— Ishlab chiqarishga tayyor fayllar\n\n"
-                "Narx: kelishuv asosida"
-            ),
+            "name": "📢 Tashqi reklama kerak?",
+            "description": "<b>📢 Tashqi reklama kerak?</b>",
         },
         "ru": {
-            "name": "Услуги дизайнера 2D/3D",
-            "description": (
-                "<b>Профессиональный 2D/3D дизайн</b>\n\n"
-                "Проекта ещё нет? Не проблема. Дизайнеры DEGA "
-                "превратят вашу идею в профессиональный 2D-чертёж "
-                "или 3D-модель.\n\n"
-                "Что входит в услугу:\n"
-                "— Получение технического задания\n"
-                "— Разработка 2D-чертежа или 3D-модели\n"
-                "— Согласование и правки\n"
-                "— Готовые файлы для производства\n\n"
-                "Стоимость: по договорённости"
-            ),
+            "name": "📢 Нужна наружная реклама?",
+            "description": "<b>📢 Нужна наружная реклама?</b>",
         },
         "en": {
-            "name": "2D/3D Designer service",
-            "description": (
-                "<b>Professional 2D/3D Design Service</b>\n\n"
-                "No project yet? No problem. DEGA designers will turn "
-                "your idea into a professional 2D drawing or 3D model.\n\n"
-                "Service includes:\n"
-                "— Technical brief intake\n"
-                "— 2D drawing or 3D model creation\n"
-                "— Review and revisions\n"
-                "— Production-ready files\n\n"
-                "Price: negotiable"
-            ),
+            "name": "📢 Need outdoor advertising?",
+            "description": "<b>📢 Need outdoor advertising?</b>",
+        },
+    },
+    "furniture": {
+        "uz": {
+            "name": "🪑 Mebel yasash kerak?",
+            "description": "<b>🪑 Mebel yasash kerak?</b>",
+        },
+        "ru": {
+            "name": "🪑 Нужно изготовление мебели?",
+            "description": "<b>🪑 Нужно изготовление мебели?</b>",
+        },
+        "en": {
+            "name": "🪑 Need furniture manufacturing?",
+            "description": "<b>🪑 Need furniture manufacturing?</b>",
+        },
+    },
+    "metal_const": {
+        "uz": {
+            "name": "🔩 Metall konstruksiyalar kerak?",
+            "description": "<b>🔩 Metall konstruksiyalar kerak?</b>",
+        },
+        "ru": {
+            "name": "🔩 Нужны металлоконструкции?",
+            "description": "<b>🔩 Нужны металлоконструкции?</b>",
+        },
+        "en": {
+            "name": "🔩 Need metal structures?",
+            "description": "<b>🔩 Need metal structures?</b>",
+        },
+    },
+    "turnkey_object": {
+        "uz": {
+            "name": "🏗️ Obyektni kalit topshirishgacha to'liq jihozlash?",
+            "description": "<b>🏗️ Obyektni kalit topshirishgacha to'liq jihozlash?</b>",
+        },
+        "ru": {
+            "name": "🏗️ Нужно комплексное оформление объекта под ключ?",
+            "description": "<b>🏗️ Нужно комплексное оформление объекта под ключ?</b>",
+        },
+        "en": {
+            "name": "🏗️ Need turnkey complete object decoration?",
+            "description": "<b>🏗️ Need turnkey complete object decoration?</b>",
+        },
+    },
+    "project_calc": {
+        "uz": {
+            "name": "💰 Tayyor loyihani hisoblab berish?",
+            "description": "<b>💰 Tayyor loyihani hisoblab berish?</b>",
+        },
+        "ru": {
+            "name": "💰 Вам нужен просчет готового проекта?",
+            "description": "<b>💰 Вам нужен просчет готового проекта?</b>",
+        },
+        "en": {
+            "name": "💰 Need a cost calculation for a ready project?",
+            "description": "<b>💰 Need a cost calculation for a ready project?</b>",
         },
     },
 }

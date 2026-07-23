@@ -94,38 +94,26 @@ TEXTS: dict[str, dict[str, str]] = {
             "Share your location or skip this step:"
         ),
     },
-    "invalid_location": {
-        "uz": "<b>📍 Lokatsiyani yuborish</b> tugmasini bosing yoki <b>O'tkazib yuborish</b> tanlang.",
-        "ru": "Нажмите <b>📍 Отправить местоположение</b> или выберите <b>Пропустить</b>.",
-        "en": "Tap <b>📍 Share Location</b> or choose <b>Skip</b>.",
-    },
+    
     "registration_done": {
         "uz": (
-            "Ro'yxatdan o'tish yakunlandi.\n\n"
-            "Ism: {name}\n"
-            "Tel: {phone}\n"
-            "Joylashuv: {location}\n\n"
+            "✅ Ro'yxatdan o'tish yakunlandi.\n\n"
+            "Ism: <b>{name}</b>\n"
+            "Tel: <code>{phone}</code>\n\n"
             "Xizmatlardan foydalanishingiz mumkin."
         ),
         "ru": (
-            "Регистрация завершена.\n\n"
-            "Имя: {name}\n"
-            "Тел: {phone}\n"
-            "Местоположение: {location}\n\n"
+            "✅ Регистрация завершена.\n\n"
+            "Имя: <b>{name}</b>\n"
+            "Тел: <code>{phone}</code>\n\n"
             "Вы можете пользоваться нашими услугами."
         ),
         "en": (
-            "Registration complete.\n\n"
-            "Name: {name}\n"
-            "Phone: {phone}\n"
-            "Location: {location}\n\n"
+            "✅ Registration complete.\n\n"
+            "Name: <b>{name}</b>\n"
+            "Phone: <code>{phone}</code>\n\n"
             "You may now use our services."
         ),
-    },
-    "location_not_provided": {
-        "uz": "Ko'rsatilmagan",
-        "ru": "Не указано",
-        "en": "Not provided",
     },
 
     # ── Asosiy menyu tugmalari ───────────────────────────────────────────────
@@ -216,19 +204,19 @@ TEXTS: dict[str, dict[str, str]] = {
     "operator_message": {
         "uz": (
             "<b>Operator bilan bog'lanish</b>\n\n"
-            "Telefon: <code>{phone}</code>\n"
+            "Telefon: +998909351177\n"
             "Ish vaqti: Du–Sha, 09:00–18:00\n\n"
             "So'rovingiz adminlarga yuborildi. Tez orada murojaat qilamiz."
         ),
         "ru": (
             "<b>Связаться с оператором</b>\n\n"
-            "Телефон: <code>{phone}</code>\n"
+            "Телефон: +998909351177\n"
             "Время работы: Пн–Пт, 09:00–18:00\n\n"
             "Ваш запрос отправлен администраторам. Мы свяжемся с вами."
         ),
         "en": (
             "<b>Contact Operator</b>\n\n"
-            "Phone: <code>{phone}</code>\n"
+            "Phone: +998909351177\n"
             "Working hours: Mon–Sat, 09:00–18:00\n\n"
             "Your request has been forwarded to our team. We will contact you soon."
         ),
@@ -285,37 +273,76 @@ TEXTS: dict[str, dict[str, str]] = {
     # ── Biz haqimizda ────────────────────────────────────────────────────────
     "about_text": {
         "uz": (
-            "<b>DEGA — Ishlab Chiqarish Kompaniyasi</b>\n\n"
-            "Biz metall konstruksiyalar, zamonaviy mebel va reklama "
-            "mahsulotlari ishlab chiqarish sohasida faoliyat yuritamiz.\n\n"
-            "Manzil: Toshkent shahri\n"
-            "Telefon: +998 90 000 00 00\n"
-            "Ish vaqti: Du–Sha, 09:00–18:00\n\n"
-            "Instagram: @dega_production\n"
-            "Telegram: @dega_official"
+            "<b>DEGA — Ishlab chiqarish kompaniyasi</b>\n\n"
+            "BBiz metall konstruksiyalar, zamonaviy mebellar va reklama mahsulotlarini toʻliq tayyor holda  ishlab chiqarishga ixtisoslashganmiz🔑\n\n"
+            "📍 Manzil: g. Toshkent, Eski-Sariqul ko'chasi, 69-uy\n"
+            "📲 Telefon: +998909351177\n"
+            "⏰ Ish vaqti: Du–Ju, 09:00–20:00\n\n"
+            "Instagram: <a href=\"https://www.instagram.com/dega.uz/\">dega.uz</a>\n"
+            "Telegram: @dega_production"
         ),
         "ru": (
             "<b>DEGA — Производственная компания</b>\n\n"
             "Мы специализируемся на производстве металлоконструкций, "
-            "современной мебели и рекламной продукции.\n\n"
-            "Адрес: г. Ташкент\n"
-            "Телефон: +998 90 000 00 00\n"
-            "Время работы: Пн–Пт, 09:00–18:00\n\n"
-            "Instagram: @dega_production\n"
-            "Telegram: @dega_official"
+            "современной мебели и рекламной продукции, под ключ🔑.\n\n"
+            "📍 Адрес: г. Ташкент, ул. Эски-Сарикул 69\n"
+            "📲 Телефон: +998909351177\n"
+            "⏰ Время работы: Пн–Пт, 09:00–20:00\n\n"
+            "Instagram: <a href=\"https://www.instagram.com/dega.uz/\">dega.uz</a>\n"
+            "Telegram:@dega_production"
         ),
         "en": (
-            "<b>DEGA — Manufacturing Company</b>\n\n"
-            "We specialize in metal structures, modern furniture "
-            "and advertising product manufacturing.\n\n"
-            "Address: Tashkent city\n"
-            "Phone: +998 90 000 00 00\n"
-            "Working hours: Mon–Sat, 09:00–18:00\n\n"
-            "Instagram: @dega_production\n"
-            "Telegram: @dega_official"
+            "<b>DEGA — Production Company</b>\n\n"
+            "We specialize in the manufacture of metal structures, modern furniture, and promotional products on a turnkey basis🔑\n\n"
+            "📍 Address: Tashkent, Eski-Sarikul str., 69\n"
+            "📲 Phone: +998909351177\n"
+            "⏰ Working hours: Mon–Fri, 09:00–20:00\n\n"
+            "Instagram: <a href=\"https://www.instagram.com/dega.uz/\">dega.uz</a>\n"
+            "Telegram: @dega_production"
         ),
     },
 
+
+    # ── Kontakt so'rash (ism + telefon bitta bosqichda) ──────────────────────────
+    "ask_contact": {
+        "uz": (
+            "Davom etish uchun quyidagi tugmani bosib,\n"
+            "<b>kontaktingizni ulashing</b>.\n\n"
+            "Shunda ism va telefon raqamingiz avtomatik saqlanadi."
+        ),
+        "ru": (
+            "Нажмите кнопку ниже, чтобы\n"
+            "<b>поделиться контактом</b>.\n\n"
+            "Имя и номер телефона сохранятся автоматически."
+        ),
+        "en": (
+            "Please tap the button below to\n"
+            "<b>share your contact</b>.\n\n"
+            "Your name and phone number will be saved automatically."
+        ),
+    },
+    "invalid_contact": {
+        "uz": "Iltimos, <b>📱 Kontaktni ulashish</b> tugmasini bosing.",
+        "ru": "Пожалуйста, нажмите кнопку <b>📱 Поделиться контактом</b>.",
+        "en": "Please tap the <b>📱 Share Contact</b> button.",
+    },
+    "order_received": {
+        "uz": (
+            "✅ Buyurtmangiz qabul qilindi!\n\n"
+            "Xizmat: <b>{service}</b>\n\n"
+            "Menejerlarimiz tez orada siz bilan bog\'lanishadi."
+        ),
+        "ru": (
+            "✅ Ваш заказ принят!\n\n"
+            "Услуга: <b>{service}</b>\n\n"
+            "Наши менеджеры свяжутся с вами в ближайшее время."
+        ),
+        "en": (
+            "✅ Your order has been received!\n\n"
+            "Service: <b>{service}</b>\n\n"
+            "Our managers will contact you shortly."
+        ),
+    },
     # ── Ro'yxatdan o'tish talab qilinadi ─────────────────────────────────────
     "not_registered": {
         "uz": "Davom etish uchun avval ro'yxatdan o'ting. /start",
@@ -326,27 +353,24 @@ TEXTS: dict[str, dict[str, str]] = {
     # ── Admin — guruhga tushuvchi xabarlar ───────────────────────────────────
     "admin_new_order": {
         "uz": (
-            "YANGI BUYURTMA\n\n"
-            "Mijoz: {name}\n"
-            "Telefon: {phone}\n"
-            "Joylashuv: {location}\n"
-            "Xizmat: {service}\n"
+            "🔔 YANGI BUYURTMA\n\n"
+            "Mijoz: <b>{name}</b>\n"
+            "Telefon: <code>{phone}</code>\n"
+            "Xizmat: <b>{service}</b>\n"
             "Vaqt: {time}"
         ),
         "ru": (
-            "НОВЫЙ ЗАКАЗ\n\n"
-            "Клиент: {name}\n"
-            "Телефон: {phone}\n"
-            "Местоположение: {location}\n"
-            "Услуга: {service}\n"
+            "🔔 НОВЫЙ ЗАКАЗ\n\n"
+            "Клиент: <b>{name}</b>\n"
+            "Телефон: <code>{phone}</code>\n"
+            "Услуга: <b>{service}</b>\n"
             "Время: {time}"
         ),
         "en": (
-            "NEW ORDER\n\n"
-            "Client: {name}\n"
-            "Phone: {phone}\n"
-            "Location: {location}\n"
-            "Service: {service}\n"
+            "🔔 NEW ORDER\n\n"
+            "Client: <b>{name}</b>\n"
+            "Phone: <code>{phone}</code>\n"
+            "Service: <b>{service}</b>\n"
             "Time: {time}"
         ),
     },
@@ -355,21 +379,18 @@ TEXTS: dict[str, dict[str, str]] = {
             "OPERATOR SO'ROVI\n\n"
             "Mijoz: {name}\n"
             "Telefon: {phone}\n"
-            "Joylashuv: {location}\n"
             "Vaqt: {time}"
         ),
         "ru": (
             "ЗАПРОС ОПЕРАТОРА\n\n"
             "Клиент: {name}\n"
             "Телефон: {phone}\n"
-            "Местоположение: {location}\n"
             "Время: {time}"
         ),
         "en": (
             "OPERATOR REQUEST\n\n"
             "Client: {name}\n"
             "Phone: {phone}\n"
-            "Location: {location}\n"
             "Time: {time}"
         ),
     },
