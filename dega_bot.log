@@ -1804,3 +1804,16 @@ sqlite3.OperationalError: no such table: users
 2026-07-23 14:10:13,944 [INFO] aiogram.dispatcher: Polling stopped
 2026-07-23 14:10:14,207 [INFO] __main__: Bot to'xtatildi.
 2026-07-23 14:10:14,208 [INFO] aiogram.dispatcher: Polling stopped for bot @degauzbot id=8805385487 - 'DEGA'
+2026-07-23 14:10:18,995 [INFO] database: Ma'lumotlar bazasi tayyor.
+2026-07-23 14:10:19,287 [INFO] __main__: DEGA Bot ishga tushmoqda...
+2026-07-23 14:10:19,950 [INFO] aiogram.dispatcher: Start polling
+2026-07-23 14:10:20,150 [INFO] aiogram.dispatcher: Run polling for bot @degauzbot id=8805385487 - 'DEGA'
+2026-07-23 14:11:11,490 [INFO] aiogram.event: Update id=603154381 is handled. Duration 552 ms by bot id=8805385487
+2026-07-23 14:11:42,603 [INFO] aiogram.event: Update id=603154382 is handled. Duration 393 ms by bot id=8805385487
+2026-07-23 14:12:13,204 [INFO] aiogram.event: Update id=603154383 is handled. Duration 477 ms by bot id=8805385487
+2026-07-23 14:12:15,182 [INFO] aiogram.event: Update id=603154384 is handled. Duration 205 ms by bot id=8805385487
+2026-07-23 14:34:44,798 [INFO] aiogram.event: Update id=603154385 is handled. Duration 494 ms by bot id=8805385487
+2026-07-23 14:34:48,803 [INFO] aiogram.event: Update id=603154386 is handled. Duration 181 ms by bot id=8805385487
+2026-07-23 14:34:54,395 [INFO] aiogram.event: Update id=603154387 is handled. Duration 523 ms by bot id=8805385487
+2026-07-23 14:34:57,548 [INFO] aiogram.event: Update id=603154388 is handled. Duration 187 ms by bot id=8805385487
+2026-07-23 14:35:04,127 [INFO] aiogram.event: Update id=603154389 is handled. Duration 219 ms by bot id=8805385487
