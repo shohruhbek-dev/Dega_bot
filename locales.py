@@ -34,9 +34,9 @@ TEXTS: dict[str, dict[str, str]] = {
         ),
     },
     "welcome_back": {
-        "uz": "Xush kelibsiz, <b>{name}</b>!\nQuyidagi menyu orqali xizmatlardan foydalaning.",
-        "ru": "Добро пожаловать, <b>{name}</b>!\nВоспользуйтесь меню ниже.",
-        "en": "Welcome back, <b>{name}</b>!\nUse the menu below to access our services.",
+        "uz": "Xizmatlarimizdan foydalanganinggiz uchun rahmat <b>{name}</b>!\nAgar boshqa xizmatlarimiz ham qiziq bo'lsa, quyidagilardan tanlashingiz mumkin 👇",
+        "ru": "Благодарим вас за пользование нашими услугами. <b>{name}</b>!\nЕсли вас интересуют другие услуги, можете выбрать ниже 👇",
+        "en": "Thank you for using our services <b>{name}</b>!\nIf you are interested in other services, you can select below 👇",
     },
     "ask_full_name": {
         "uz": "Iltimos, <b>Ism va Familiyangizni</b> kiriting:\n<i>(Faqat matn qabul qilinadi)</i>",
